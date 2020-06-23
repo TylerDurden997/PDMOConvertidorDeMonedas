@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/IV_moneda"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="100dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/moneda"
+            app:srcCompat="@drawable/moneda" />
+
+        <TextView
+            android:id="@+id/TV_de"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/de"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <Spinner
+            android:id="@+id/SP_moneda_inicio"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:entries="@array/lista_de_monedas_inicio"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/TV_valor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/valor"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/ET_valor_in"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/cantidad"
+                android:inputType="numberDecimal"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:autofillHints="false" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/TV_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/a"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <Spinner
+            android:id="@+id/SP_moneda_salida"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:entries="@array/lista_de_monedas_salida" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/TV_conversion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/conversion"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/TV_valor_out"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/valor_out"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/BT_cambio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/black"
+            android:text="@string/cambiar"
+            android:textAllCaps="false"
+            android:textColor="@color/ghostwhite" />
+
+        <TextView
+            android:id="@+id/TV_imprimir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/imprimir_datos"
+            android:textColor="@color/darkred"
+            android:textSize="18sp" />
+    </LinearLayout>
+</ScrollView>

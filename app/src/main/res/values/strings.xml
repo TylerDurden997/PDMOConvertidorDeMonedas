@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Convertidor De Monedas</string>
+    <string name="moneda">Moneda</string>
+    <string name="de">De:</string>
+    <string name="valor">Ingrese valor:</string>
+    <string name="valor_ingresado">0.0</string>
+    <string name="a">A:</string>
+    <string name="conversion">Conversión:</string>
+    <string name="valor_salida">0.0</string>
+    <string name="cambiar">Cambio</string>
+    <string name="valor_out">0.0</string>
+    <string name="imprimir_datos" />
+    <string name="cantidad">0.0</string>
+    <string-array name="lista_de_monedas_inicio">
+        <item>Peso Colombiano</item>
+        <item>Dolar</item>
+        <item>Libra Esterlina</item>
+    </string-array>
+    <string-array name="lista_de_monedas_salida">
+        <item>Peso Colombiano</item>
+        <item>Dolar</item>
+        <item>Libra Esterlina</item>
+    </string-array>
+</resources>
